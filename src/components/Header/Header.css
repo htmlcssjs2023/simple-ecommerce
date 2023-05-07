@@ -1,0 +1,42 @@
+.header{
+    box-sizing: border-box;
+    background-color: #1C2B35;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 97px;
+    padding-left: 97px;
+    transition: all;
+}
+.header a{
+    color:#fff;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 32px;
+    text-decoration: none;
+    transition: all;
+}
+.header a:hover{
+    color:#FF9900;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .header{
+         height: auto;
+         transition: .4s;
+    }
+    .header a{
+      display: block;
+      padding: 10px 0;
+      transition: .4s;
+    }
+}
+
